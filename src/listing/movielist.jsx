@@ -16,6 +16,7 @@ import Search from "../images/search.png";
 import Back from "../images/Back.png";
 import {connect} from 'react-redux';
 import UseSearch from "./useSearch";
+import LazyLoad from 'react-lazy-load';
 
 
 function MovieList(props){
@@ -25,11 +26,15 @@ const [val,setVal]=useState(false);
 
 
 const {add}=props;
+
+//redux
 useEffect(()=>{
          
             add([page1]);
 },[add])
 
+
+//search
 function handleSearch(e){
 
     let result=[]
@@ -88,8 +93,9 @@ function Cards(img)
 
         return <Card>
        <Card.Body> 
+          <LazyLoad>
             <Card.Img variant="top" src={img} />
-        
+            </LazyLoad>
         </Card.Body> 
            </Card>
            
@@ -125,8 +131,8 @@ const handleScroll =(e)=>{
 
 }
  return( 
-     <div className="movielistcontainer">
-     <div className="movielist_search" > 
+ <div className="movielistcontainer">
+         <div className="movielist_search" > 
             <div className="movielist_searchBar"> 
                <div className="searchBar" >
                    <img src={Back} alt="back-arrow"></img> 
@@ -135,41 +141,28 @@ const handleScroll =(e)=>{
                </div>
                <img className="searchImg" alt="search" src={Search} onClick={handleClick}></img> 
             
-              </div>
+            </div>
             
        </div>   
        <div className="row cardStyle"  onScroll={handleScroll}> 
-           {result.length===0 ? data.map((pages)=>pages.page['content-items']?.content?.map((page1,index)=>{
-
-               let img=poster(page1['poster-image']);
+           {result.length===0 ? data.map((pages)=>pages?.page['content-items']?.content?.map((page1,index)=>{
+                 let img=poster(page1['poster-image']);
                 return <div className="col-4 col-Item" key={index}>
+                           {Cards(img)}
+                           <p >{page1?.name}</p>
+                        </div> 
+            })):
+             result.map((res)=>res.map((page1,index)=>{
 
-                     {Cards(img)}
+                  let img=poster(page1['poster-image']);
+                 return <div className="col-4 col-Item" key={index}>
+                 {Cards(img)}
 
-              <p >{page1?.name}</p>
-            </div> 
-       
-                   
-    
-      })):
-    result.map((res)=>res.map((page1,index)=>{
-
-        let img=poster(page1['poster-image']);
-        return <div className="col-4 col-Item" key={index}>
-
-               {Cards(img)}
-
-        <p>{page1?.name}</p>
-      </div> 
- 
-             
-
-    }))
-
-
-    } 
-     </div> 
-      </div>
+                <p>{page1?.name}</p>
+              </div> 
+              }))} 
+       </div> 
+</div>
  );
 
 }
@@ -178,10 +171,6 @@ const mapStateToProps = state => {
     return {data};
 };
 
-// const mapDispatchToProps = dispatch => ({
-//     add: () =>dispatch(addAction())
-   
-// });
 const mapDispatchToProps ={
     add: listaction.addAction
    
