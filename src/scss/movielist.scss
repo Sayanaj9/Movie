@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Titillium';
-    src: url('./fonts/TitilliumWeb-Regular.ttf');
+    src: url('./fonts/TitilliumWeb-Light.ttf');
   }
 .movielistcontainer{
 
@@ -11,10 +11,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        padding: 20px 30px 36px 30px;
-        z-index: 100;
+        padding: 30px 10px 30px 10px;
+        z-index: 102;
         width: 100%;
-        height: 192px;
+       
+
     
 
         .movielist_searchBar{
@@ -23,7 +24,6 @@
            display: flex;
            align-items: center;
            justify-content: space-between;
-            background-image: url("../images/nav_bar.png");
 
            .searchBar{
                 display: flex;
@@ -33,10 +33,11 @@
               
                p{
                    margin: 0px;
-                   margin-left: 30px;
+                   margin-left: 16px;
                   color: white;
                   font-family: 'Titillium';
-                  font-size: 16px;
+                  font-size: 26px;
+                 
 
                }
                input{
@@ -48,8 +49,9 @@
 
                }
             }
+           
            img{
-            height: 20px;
+            height: 30px;
 
           }
         }
@@ -57,28 +59,71 @@
        
     }
 
+    .navbar{
+        position: fixed;
+        z-index: 101;
+        background-image: url("../images/nav_bar.png");
+        width: 100vw;
+        height: 40px;
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+        top:50px;
+    }
+
     .cardStyle{
         margin: 0px;
         position: relative;
         overflow-y: scroll;
-        padding:0px 15px;
-        height: calc(100vh - 140px);
-       top: 140px;
+        padding:0px 6px;
+        // height: calc(100vh - 60px);
+        
+        max-height: calc(100vh - 60px);
+        top: 60px;
+        @media only screen and (min-width:992px){
+            padding:0px 15px;
+        }
 
         .col-Item{
-              margin-bottom: 90px;
+              margin-bottom: 40px;
+              padding: 0px 6px;
+              @media only screen and (min-width:992px){
+                padding:0px 15px;
+            }
+
+            
+              .card{
+                  border: none;
+                  border-radius: 0px;
+              }
 
               .card-body{
                 padding: 0px;
+
+                .card-img-top{
+                         height: 130px;
+                         @media only screen and (min-width:768px){
+                            height: 240px;
+                        }
+                        @media only screen and (min-width:992px){
+                            height: 320px;
+                        }
+                }
               }
         }
 
         p{
             color: #ffffff;
             margin: 0px;
-            margin-top: 24px;
             font-family: 'Titillium';
-            font-size: 16px;
+            font-size: 18px;
+            width:100%;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-right: 0px;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            text-align: left;
+        
         }
 
     }
