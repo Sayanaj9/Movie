@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f5b80f6cb431959413c1e174b1084b2d",
+    "revision": "f8816c4587ece4b1498149345f5f88a6",
     "url": "/MovieApp/index.html"
   },
   {
-    "revision": "8c962b7f16f87ef65429",
+    "revision": "d975ddcca6d77cffe756",
     "url": "/MovieApp/static/css/2.11829350.chunk.css"
   },
   {
-    "revision": "ca2866c7401669fb0c09",
-    "url": "/MovieApp/static/css/main.1b4fdb49.chunk.css"
+    "revision": "a0449a00dcf9db2a57d6",
+    "url": "/MovieApp/static/css/main.20d30de4.chunk.css"
   },
   {
-    "revision": "8c962b7f16f87ef65429",
-    "url": "/MovieApp/static/js/2.7a9dee44.chunk.js"
+    "revision": "d975ddcca6d77cffe756",
+    "url": "/MovieApp/static/js/2.913e2982.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/MovieApp/static/js/2.7a9dee44.chunk.js.LICENSE.txt"
+    "url": "/MovieApp/static/js/2.913e2982.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ca2866c7401669fb0c09",
-    "url": "/MovieApp/static/js/main.341ecaae.chunk.js"
+    "revision": "a0449a00dcf9db2a57d6",
+    "url": "/MovieApp/static/js/main.4e102877.chunk.js"
   },
   {
     "revision": "170ce17e66ab04893701",
     "url": "/MovieApp/static/js/runtime-main.dfea68a4.js"
   },
   {
-    "revision": "ed1d014bf2b8b72f27d6af65c69f710a",
-    "url": "/MovieApp/static/media/TitilliumWeb-Regular.ed1d014b.ttf"
+    "revision": "edc21ba4e5eb0d77c371a8f0851ed72f",
+    "url": "/MovieApp/static/media/TitilliumWeb-Light.edc21ba4.ttf"
   },
   {
     "revision": "d5f2a7f493e94ed267d41620eef143d9",

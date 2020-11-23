@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/MovieApp/static/css/main.1b4fdb49.chunk.css",
-    "main.js": "/MovieApp/static/js/main.341ecaae.chunk.js",
-    "main.js.map": "/MovieApp/static/js/main.341ecaae.chunk.js.map",
+    "main.css": "/MovieApp/static/css/main.20d30de4.chunk.css",
+    "main.js": "/MovieApp/static/js/main.4e102877.chunk.js",
+    "main.js.map": "/MovieApp/static/js/main.4e102877.chunk.js.map",
     "runtime-main.js": "/MovieApp/static/js/runtime-main.dfea68a4.js",
     "runtime-main.js.map": "/MovieApp/static/js/runtime-main.dfea68a4.js.map",
     "static/css/2.11829350.chunk.css": "/MovieApp/static/css/2.11829350.chunk.css",
-    "static/js/2.7a9dee44.chunk.js": "/MovieApp/static/js/2.7a9dee44.chunk.js",
-    "static/js/2.7a9dee44.chunk.js.map": "/MovieApp/static/js/2.7a9dee44.chunk.js.map",
+    "static/js/2.913e2982.chunk.js": "/MovieApp/static/js/2.913e2982.chunk.js",
+    "static/js/2.913e2982.chunk.js.map": "/MovieApp/static/js/2.913e2982.chunk.js.map",
     "index.html": "/MovieApp/index.html",
-    "precache-manifest.0ed9a089a928c00ee8af63d456d7459e.js": "/MovieApp/precache-manifest.0ed9a089a928c00ee8af63d456d7459e.js",
+    "precache-manifest.89e0cf7244e9969d01a6ed82dc4efa68.js": "/MovieApp/precache-manifest.89e0cf7244e9969d01a6ed82dc4efa68.js",
     "service-worker.js": "/MovieApp/service-worker.js",
     "static/css/2.11829350.chunk.css.map": "/MovieApp/static/css/2.11829350.chunk.css.map",
-    "static/css/main.1b4fdb49.chunk.css.map": "/MovieApp/static/css/main.1b4fdb49.chunk.css.map",
-    "static/js/2.7a9dee44.chunk.js.LICENSE.txt": "/MovieApp/static/js/2.7a9dee44.chunk.js.LICENSE.txt",
-    "static/media/movielist.scss": "/MovieApp/static/media/TitilliumWeb-Regular.ed1d014b.ttf",
+    "static/css/main.20d30de4.chunk.css.map": "/MovieApp/static/css/main.20d30de4.chunk.css.map",
+    "static/js/2.913e2982.chunk.js.LICENSE.txt": "/MovieApp/static/js/2.913e2982.chunk.js.LICENSE.txt",
+    "static/media/movielist.scss": "/MovieApp/static/media/TitilliumWeb-Light.edc21ba4.ttf",
     "static/media/poster1.jpg": "/MovieApp/static/media/poster1.d5f2a7f4.jpg",
     "static/media/poster2.jpg": "/MovieApp/static/media/poster2.81ccf144.jpg",
     "static/media/poster3.jpg": "/MovieApp/static/media/poster3.e242f037.jpg",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.dfea68a4.js",
     "static/css/2.11829350.chunk.css",
-    "static/js/2.7a9dee44.chunk.js",
-    "static/css/main.1b4fdb49.chunk.css",
-    "static/js/main.341ecaae.chunk.js"
+    "static/js/2.913e2982.chunk.js",
+    "static/css/main.20d30de4.chunk.css",
+    "static/js/main.4e102877.chunk.js"
   ]
 }
